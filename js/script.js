@@ -21,3 +21,12 @@ document.getElementById("push").addEventListener("click", function () {
     `;
   }
 });
+
+// let currentTasks = document.querySelectorAll(".delete");
+// for (let index = 0; index < tasks.length; index++) {
+//     tasks[index].onclick= function  {
+        
+//     }
+//     const element = tasks[index];
+    
+// }
