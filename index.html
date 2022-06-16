@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
       integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>To-do-list</title>
   </head>
   <body>
     <h1>Hello-Bootstrap</h1>
+    <main class="container-fluid d-block justify-content-center">
+      <div class="text-center pt-5">
+        <h1>To do list with <span id="color-yellow">JS</span></h1>
+      </div>
+      <div class="d-flex justify-content-center pt-5">
+        <input
+          type="text"
+          placeholder="Nouvelle tache..."
+          class="form-control w-25"
+          id="to-do-input"
+        />
+        <div class="pl-3">
+          <button id="push" class="btn btn-primary">Ajouter</button>
+        </div>
+      </div>
+      <div class="text-center pt-4 pb-2 text-white font-weight-bolder">
+        <p>Le 15/06/2022</p>
+      </div>
+      <div id="tasks"></div>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
